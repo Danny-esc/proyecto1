@@ -1,0 +1,660 @@
+/* importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+html{
+    scroll-behavior: smooth;
+}
+.btn-wsp{
+    position:fixed;
+    width: 55px;
+    height:55px;
+    line-height:55px;
+    bottom: 30px;
+    right:30px;
+    background: #0df053;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0ppx 1px 10px rgba (0,0,0,0.3);
+}
+.btn-wsp:hover {
+    text-decoration:none;
+    color: #0df053;
+    background-color:#ffffff;
+}
+
+body {
+    background: linear-gradient(45deg, #f7ab68, #f86568,#f7ab68, #f86568);
+    background-size: 400% 400%;
+    animation: gradient 12s ease-in infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* SECCION I N I C I O */
+.inicio{
+    background:linear-gradient(to right, #f04347, #f04347);
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
+    height: 100vh;
+    padding:  0 20px;
+}
+.inicio .contenido{
+    color: #ffff;
+}
+.inicio header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+.inicio .logo a{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 0;
+    top: 10%;
+    width: 355px;
+    height: 90px;
+    padding-left: 50px;
+}
+.inicio .logo i{
+    margin-top:50px;
+    display: inline-block;
+    
+}
+#inicio header nav a{
+    text-align: center;
+    width: 100px;
+    color: #ffff;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1%;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+}
+#inicio header nav a:hover{
+    border-bottom: 2px solid #fff;
+}
+.inicio .redes a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffff;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.inicio .fila{
+    display: flex;
+   
+    padding-bottom: 0;
+}
+.inicio .fila .col{
+    width: 50%;
+}
+.inicio .fila .col h2{
+    padding-left: 55px;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.inicio .fila .col p{
+    padding-left: 55px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.inicio .fila .col .contenedor-img{
+    max-width: 280px;
+    margin: auto;
+}
+.inicio .fila .col .contenedor-img img{
+    width: 100%;
+}
+.inicio .fila .col button{
+    margin-left: 350px;
+    width: fit-content;
+    padding: 5px 40px;
+    border-radius:18px;
+    border: 2px solid #ffff;
+    color: #fff;
+    background:#f99e4f;
+    transition: .5s;
+    cursor: pointer;
+}
+.inicio .fila .col button:hover{
+    transform: scale(1.1);
+}
+#icono-nav{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    display: none;
+}
+#icono-nav:hover{
+    background-color: #3e3e3e;
+}
+.sombra{
+    filter:drop-shadow(0em 30px 20px #e0404b);
+}
+/* SECCION S E R V I C I O S */
+
+.ayuda {
+    margin: 0;
+    text-align: center; /* Centrar el contenido horizontalmente */
+    background-color: #1da147; /* Cambiar el color de fondo si es necesario */
+    padding: 100px; /* Ajustar el relleno según sea necesario */
+}
+
+.col {
+    display: inline-block; /* Hacer que el contenido dentro de .col se comporte como un bloque en línea */
+    margin-top: 20px; /* Ajustar el margen superior según sea necesario */
+}
+
+.carddesk {
+    background-color: #f04347; /* Cambiar el color de fondo de la tarjeta a negro */
+    color: #ffff; /* Cambiar el color del texto a blanco */
+    border-radius: 30px; /* Agregar bordes redondeados a la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra a la tarjeta */
+    padding: 20px; /* Ajustar el relleno según sea necesario */
+    text-align: center; /* Alinear el texto a la izquierda dentro de la tarjeta */
+}
+
+.icono {
+    background-color: #ff9900; /* Color de fondo del icono */
+    border-radius: 50%; /* Hacer que el icono tenga forma de círculo */
+    width: 60px; /* Ancho del icono */
+    height: 60px; /* Altura del icono */
+    display: flex; /* Usar flexbox para centrar el contenido verticalmente */
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    margin: 0 auto 20px; /* Alinear el icono al centro horizontal y agregar margen inferior */
+}
+
+.icono i {
+    font-size: 30px; /* Tamaño del icono */
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Eliminar el margen superior predeterminado del encabezado */
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px; /* Agregar espacio entre el párrafo y el enlace */
+}
+
+
+
+
+
+.servicios{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+    top: -170px;
+    z-index: 10;
+    margin-bottom: 1px;
+}
+.servicios .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.servicios .fila .col{
+    text-align: center;
+    width: 30%;
+}
+.servicios .fila .col .card{
+    border: 1px solid #8d8d8d;
+    height: 400px;
+    background-color: #F7F4F1;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+.servicios .icono{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.servicios .icono .circulo{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+.color1{
+    background: linear-gradient(#ff9900, #ff5b00);
+}
+.color2{
+    background: linear-gradient(#038aee, #0039a9);
+}
+.color3{
+    background: linear-gradient(#04e2ee, #017795);
+}
+.servicios h3{
+    margin-bottom: 20px;
+    font-size:20px;
+}
+.servicios .card p{
+    color: #8d8d8d;
+    line-height: 28px;
+    font-size: 15px;
+}
+.servicios .card a{
+    font-size:12px;
+    text-decoration: none;
+    color: #008cff;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*seccion de ayuda*/
+.ayuda {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    background-color:transparent;
+
+
+
+.contenedor.pg{
+    color:#ffff;
+    font-size:30px;
+}
+}
+/* seccion HABILIDADES */
+.habilidades{
+    background: transparent ;
+    color: #000;
+    padding: 15px 0;
+    position: relative;
+    top: -100px;
+}
+.habilidades h2{
+    margin-top:10px;
+    margin-bottom:20px;
+    text-align: center;
+    font-size: 20px;
+    color:#000000;
+}
+.habilidades .contenedor-habi{
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    padding: 10px;
+    margin: auto 0;
+}
+.score .box{
+    width: 100%;
+}
+.score .box h2{
+    display: block;
+    text-align: center;
+    
+}
+.score .box .chart{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    line-height: 160px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Esta clase se genera dinámicamente por la librera para graficos */
+.score .box canvas{
+    position:absolute;
+    top: 0;
+    left: 0;
+    
+}
+/* SECCION T R A B A J O S */
+.trabajos{
+    
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.trabajos h2{
+    text-align: center;
+    color:#ffff;
+    font-size:25px;
+}
+.trabajos nav{
+    text-align: center;
+    margin: 30px 0;
+}
+.trabajos nav a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #ffff;
+    font-size:17px;
+    font-weight: bold;
+    padding: 3px 10px;
+    border: 3px solid transparent;
+}
+.trabajos nav a:hover{
+    border: 3px solid #ff5b00;
+}
+/* Esta clase se agregrá dinámicamente cuando haya seleccionada una opción */
+.borde{
+    
+    border: 3px solid #f99e4f !important;  
+    border-radius:25px;
+}
+.trabajos .galeria .item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.trabajos .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap:30px;
+}
+.trabajos .galeria .item{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8d8d8d ;
+    border-radius: 10px;
+}
+.trabajos .galeria .item .info{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color:#fff ;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+.trabajos .galeria .item .info h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.trabajos .galeria .item .info span{
+    color: #8d8d8d;
+    display: inline-block;
+    border: 2px solid #8d8d8d;
+    margin: 0 3px;
+    padding:  0 5px;
+}
+.trabajos .galeria .item .info a{
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: #007be5;
+    font-weight: bold;
+}
+.trabajos .galeria .item:hover .info{
+    opacity: 1;
+    top: 0;
+}
+/* SECCIÓN C O N T A C T O */
+.contacto{
+    background:
+        linear-gradient(rgba(240,67,71,255), rgba(255, 255, 255, 0.8)),
+        url(img/foto-contacto.png);
+        background-size: cover;
+        color: #ffff;
+        margin-top: 10px;
+        padding: 80px 20px;
+}
+.contacto .contenedor-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size:30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contacto .contenedor-contacto .fila{
+    display: flex;
+    
+}
+.contacto .contenedor-contacto .fila .col{
+    width: 50%;
+}
+.contacto .contenedor-contacto .info{
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-left: 3px solid #000000;
+    padding-left: 8px;
+}
+.contacto .contenedor-contacto .info p{
+    border-radius:1px;
+
+}
+
+.contacto input, .contacto textarea{
+    width: 100%;
+    font-size: 17px;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid #ffffff ;
+    border-radius:25px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.contacto .btn{
+    margin-left: 225px;
+    text-align: center; 
+    width: 100px;
+    padding: 5px;
+    border: 2px solid;
+    color: #ffff;
+    cursor: pointer;
+    background: #f99e4f;
+    
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:1180px){
+    .inicio{
+        clip-path: none;
+    }
+}
+@media screen and (max-width:800px){
+    .redes{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #nav.responsive{
+        background-color: rgba(0,0,0,.9);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+    #nav.responsive a{
+        font-size: 30px;
+    }
+    #icono-nav{
+        display: block;
+    }
+
+    .inicio{
+        height: auto;
+    }
+    .inicio .fila{
+        display: block;
+    }
+    .inicio .fila .col{
+        width: 100%;
+        text-align: center;
+    }
+    .inicio .fila .col h2{
+        margin-top: 20px;
+    }
+    .inicio .fila .col .contenedor-img{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .servicios{
+        position: static;
+        padding: 20px;
+    }
+    .servicios .fila{
+        display: block;
+        margin-bottom: 0;
+    }
+    .servicios .fila .col{
+        width: 70%;
+        margin: auto;
+    }
+    .servicios .fila .col .card{
+        margin-bottom: 20px;
+    }
+    .habilidades{
+        position: static;
+    }
+
+    .trabajos nav a{
+        margin: 0 5px;
+    }
+
+    .contacto .fila{
+        display:  block !important;
+    }
+    .contacto .fila .col{
+        text-align: center;
+        width: 100% !important;
+    }
+    .contacto .fila .col .info{
+        float: left;
+        font-size: 12px;
+        width: 25%;
+    }
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0; 
+    padding: 0;
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+.intro {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #f04347;
+    transition: 1s;
+    
+}
+
+.intro img {
+    top: 10%;
+    width: 350px;
+    height: 100px;
+    position: absolute;
+}
+
+.intro p{
+    
+    color: #ffffff;
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.logo {
+    
+    font-size: 34px;
+    color: #ffffff;
+}
+
+.logo-parts {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo-parts.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo-parts.fade {
+    bottom: 250px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.content{
+    width: 100%;
+    padding: 10 px;
+    font-size: 2rem;
+}
+
